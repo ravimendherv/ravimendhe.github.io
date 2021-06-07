@@ -70,3 +70,25 @@ $(document).ready(function(){
         }
     });
 });
+
+function smsser(){
+    window.open("#");
+}
+function poster(){
+    window.open("https://drive.google.com/file/d/1Ir5fwD_Use3UM4wRSP2ebqaTbBGtMtgl/view?usp=sharing");
+}
+function doctorsoftware(){
+    window.open("https://drive.google.com/file/d/1dmMQecXnrhl00EKWAQ51QxOeFP14e5NF/view?usp=sharing");
+}
+function mlheartdisease(){
+    window.open("https://drive.google.com/file/d/13oK6BEwK3DtBUtOxSQsxWh1XdNXuoHUu/view?usp=sharing");
+}
+function timealert(){
+    window.open("https://drive.google.com/file/d/1L6msILxCgCcby_i8ElnnKO3W5jXjoVQB/view?usp=sharing");
+}
+function multiconverter(){
+    window.open("https://drive.google.com/file/d/1oExi5Zt1z52WOPzU5DTWFvmRsfqGNrBu/view?usp=sharing");
+}
+function keduapp(){
+    window.open("https://drive.google.com/file/d/1G2SReD7XG8axxMt-CFNvGvffLDtL7EdB/view?usp=sharing");
+}
