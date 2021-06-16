@@ -78,6 +78,7 @@ section .title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
+  width: fit-content;
   font-size: 20px;
   color: #8a2be2;
   padding: 0 5px;
@@ -770,12 +771,16 @@ footer span a:hover {
   }
 }
 #education {
+  /* border-collapse: collapse;
+  width: 100%; */
   border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
+  border: 1px solid #ddd;
 }
 
 #education td,
-#customers th {
+#education th {
   border: 1px solid #ddd;
   padding: 8px;
 }
