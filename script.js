@@ -90,5 +90,5 @@ function multiconverter(){
     window.open("https://drive.google.com/file/d/1oExi5Zt1z52WOPzU5DTWFvmRsfqGNrBu/view?usp=sharing");
 }
 function keduapp(){
-    window.open("https://drive.google.com/file/d/1G2SReD7XG8axxMt-CFNvGvffLDtL7EdB/view?usp=sharing");
+    window.open("https://drive.google.com/file/d/1yZhkifQUTAqNc7ExUm62z4Z_IUaV_Ck_/view?usp=sharing");
 }
