@@ -92,3 +92,6 @@ function multiconverter(){
 function keduapp(){
     window.open("https://drive.google.com/file/d/1yZhkifQUTAqNc7ExUm62z4Z_IUaV_Ck_/view?usp=sharing");
 }
+function doccard(){
+    window.open("https://drive.google.com/file/d/1a6oUPIZks6J0uf9PkVfc4jvrklHReACb/view?usp=sharing");
+}
