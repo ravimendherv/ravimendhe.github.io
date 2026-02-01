@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
 
 <head>
@@ -14,6 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 </head>
 
@@ -21,23 +23,25 @@
     <div class="scroll-up-btn">
         <i class="fas fa-arrow-alt-circle-up"></i>
     </div>
+
     <nav class="navbar">
         <div class="max-width">
-            <!-- <div class="logo"><a href="#">Portfo<span>lio.</span></a></div> -->
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About Me</a></li>
-                <li><a href="#experience" class="menu-btn">Professional Experience</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#achievements" class="menu-btn">Achievements</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
+            <div class="menu-btn" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+
+    <!-- #experience -->
 
     <!-- home section start -->
     <section class="home" id="home">
@@ -47,6 +51,8 @@
                 <br>
                 <div class="text-2">Ravi Mendhe</div>
                 <!-- <a href="#">Hire me</a> -->
+                <br>
+                <div class="text-3">I'm a <span class="typing"></span></div>
             </div>
         </div>
     </section>
@@ -54,783 +60,805 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title">About Me</h2>
             <div class="about-content">
+
                 <div class="column left">
-                    <div class="row">
-                        <div style="width:80%;" class="col-12">
-                            <img src="images/profile.jpeg" alt="Ravi Mendhe">
-                        </div>
-
-                        <div class="about-info col-12" style="width:100%;">
-                            <div class="icons">
-                                <!-- <table> -->
-                                <!-- <tr> -->
-                                <!-- <td> -->
-                                <br>
-                                <div class="row">
-                                    <i class="fas fa-user-tie" style="color:#696969;"></i>
-                                    <div class="info">
-                                        <b>
-                                            <div class="head">Name</div>
-                                        </b>
-                                        <div class="sub-title">Ravi Mendhe</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <!-- </td> -->
-                                <!-- <td> -->
-                                <div class="row">
-                                    <i class="fas fa-user-clock" style="color:green;"></i>
-                                    <div class="info">
-                                        <b>
-                                            <div class="head">Age</div>
-                                        </b>
-                                        <div class="sub-title">22 Years Old</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <!-- </td> -->
-                                <!-- </tr> -->
-                                <!-- <tr> -->
-                                <!-- <td> -->
-                                <div class="row">
-                                    <i class="fas fa-male" style="color:blue;"></i>
-                                    <div class="info">
-                                        <b>
-                                            <div class="head">Gender</div>
-                                        </b>
-                                        <div class="sub-title">Male</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <!-- </td> -->
-                                <!-- <td> -->
-                                <div class="row">
-                                    <i class="fas fa-flag" style="color:black;"></i>
-                                    <div class="info">
-                                        <b>
-                                            <div class="head">Nationality</div>
-                                        </b>
-                                        <div class="sub-title">Indian</div>
-                                    </div>
-                                </div>
-
-                                <!-- </td> -->
-                                <!-- </tr> -->
-
-                                <!-- </table> -->
-                            </div>
-
-                        </div>
+                    <div class="profile-img-container">
+                        <img src="images/profile.jpeg" alt="Ravi Mendhe">
                     </div>
 
+                    <div class="personal-details-grid">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div>
+                                <div class="head">Name</div>
+                                <div class="sub-title">Ravi Mendhe</div>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <div>
+                                <div class="head">Age</div>
+                                <div class="sub-title">26 Years</div>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <div>
+                                <div class="head">Gender</div>
+                                <div class="sub-title">Male</div>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <div class="head">Nationality</div>
+                                <div class="sub-title">Indian</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="column right">
-                    <div class="text">I'm Ravi Mendhe,</div>
-                    <p>working as an <strong>Application Developer</strong> at <strong>Findability Sciences</strong>. In this role, 
-                        I utilize my skills and expertise to create innovative software solutions and contribute to the organization's technological endeavors.
-                        <br><b>Objective</b><br>
-                        <i>To contribute my skills towards creating extraordinary things and reaping the rewards of positivity.</i>
-                        <br><br><b>Education Details</b><br>
-                    <div class="row">
-                        <div class="col-12" style="overflow-x: auto;">
-                            <table id="education">
-                                <tr><b>
-                                        <th>Education</th>
-                                        <th>Board/University</th>
-                                        <th>Year of Passing</th>
-                                        <th>Performance</th>
-                                    </b>
-                                </tr>
-                                <tr>
-                                    <b>
-                                        <td class="cell-bg">Bachelor in Computer Engineering (BTech) </td>
-                                    </b>
-                                    <td>Deogiri Institute of Engineering and Management Studies, Aurangabad.(DBATU)</td>
-                                    <td>2022</td>
-                                    <td>9.19 (CGPA)</td>
-                                </tr>
-                                <tr>
-                                    <b>
-                                        <td class="cell-bg">Diploma in Computer Engineering</td>
-                                    </b>
-                                    <td>MGM'S Polytechnic College, Aurangabad.(MSBTE)</td>
-                                    <td>2019</td>
-                                    <td>85 (%)</td>
-                                </tr>
-                                <tr>
-                                    <b>
-                                        <td class="cell-bg">SSC</td>
-                                    </b>
-                                    <td>Saint Francis De Sales High School, Aurangabad.(MSBSHSE)</td>
-                                    <td>2016</td>
-                                    <td>73 (%)</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                    </div>
-
-
+                    <div class="text">Software Engineer @ IntegriChain</div>
+                    <p class="bio-p">
+                        I am a dedicated **Software Engineer** at **IntegriChain**, specializing in
+                        architecting robust systems for pharmaceutical data analytics.
+                        Currently, I am focused on the **Claims Data Management** platform,
+                        engineered to handle complex pharmaceutical validations and high-fidelity
+                        report generation across Standalone and icyte infrastructures.
                     </p>
-                    <a class="resume"
+                    <p class="bio-p">
+                        Beyond my core responsibilities, I am actively exploring the frontiers of
+                        Generative AI. I am gaining hands-on experience with **RAG (Retrieval-Augmented Generation)**,
+                        **Vector Databases**, and **Large Language Models (LLMs)**. My goal is to leverage these
+                        technologies to solve data challenges at scale and evolve into an **AI Engineer**,
+                        driving the next wave of intelligent software innovation.
+                    </p>
+
+                    <div class="objective-box">
+                        "To contribute my skills towards creating extraordinary things and reaping the rewards of
+                        positivity."
+                    </div>
+
+                    <div class="edu-section-title">
+                        <i class="fa-solid fa-graduation-cap"></i> Education Details
+                    </div>
+
+                    <div class="education-container">
+                        <div class="edu-card">
+                            <div class="edu-info">
+                                <h4>Bachelor in Computer Engineering (BTech)</h4>
+                                <p>Deogiri Institute of Eng. & Mgmt (DBATU) • 2022</p>
+                            </div>
+                            <div class="edu-stats">
+                                <span class="percentage">9.19 CGPA</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-info">
+                                <h4>Diploma in Computer Engineering</h4>
+                                <p>MGM'S Polytechnic College (MSBTE) • 2019</p>
+                            </div>
+                            <div class="edu-stats">
+                                <span class="percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="resume-btn"
                         href="https://drive.google.com/file/d/1XsbC-nNz4m0-DFpE4KIXbvuuikJSEEzy/view?usp=sharing"
-                        target="_blank">Download Resume</a>
-
+                        target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-<!-- my experience  -->
-    <section class="experience" id="experience">
+
+    <section class="experience-section" id="experience">
         <div class="max-width">
-            <h2 class="title">Professional Experience</h2>
-            <div class="experience-content">
-                <div>
-                    <h2 class="underline">Findability Sciences</h2><h5>( December 2021 - Present )</h5><br>
-                    <div class="experience_project">
-                        <h3>Findability.EDA</h3><h5>( December 2022 - Present )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exploratory Data Analysis (EDA) 
-                                is a critical aspect of data exploration and pre-processing in machine learning and data science. EDA is the process of analyzing and 
-                                visualizing data to gain insight into its characteristics, patterns, and relationships. It involves identifying outliers, handling missing 
-                                or incomplete data, and understanding the distribution and summary statistics of the data.</p>
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <p>A timeline of my engineering journey and technical contributions.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="company-info">
+                    <span class="company-name">IntegriChain</span>
+                    <span class="tenure">April 2024 — Present</span>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <span class="role-label">Software Engineer</span>
+                        <h3>Claims Data Management</h3>
+                        <p class="project-desc">
+                            Architecting a mission-critical system for complex pharmaceutical claim validations and
+                            rebate processing.
+                            Engineered the platform to be fully compatible across both Standalone and icyte
+                            infrastructures,
+                            enabling manufacturers to accurately validate claims and generate high-fidelity reports for
+                            rebate auditing.
+                        </p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Angular</span>
+                            <span class="tech-pill">Snowflake</span>
+                            <span class="tech-pill">AWS Batch</span>
+                            <span class="tech-pill">AWS Lambda</span>
+                            <span class="tech-pill">Redis</span>
+                            <span class="tech-pill">Docker</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python Backend Developer</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, FastAPI, Apache ActiveMQ, Spring Boot, React, MySQL</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Development of REST API, <br class="next-br"><span class="responsibility_list">Manage User Files, <br class="next-br"></span><span class="responsibility_list">Manage user operation data using MySQL Database, </span><br class="next-br">
-                                <span class="responsibility_list">Manage Python side Deployment on Server.</span></span></h4>
-                        </div>
+                        <ul class="bullet-list" style="margin-top: 15px; color: #64748b; font-size: 0.9rem;">
+                            <li>Developed multi-tier pharmaceutical validation logic to ensure rebate accuracy.</li>
+                            <li>Built a robust reporting engine that generates manufacturers' validation and claim
+                                rebate reports.</li>
+                            <li>Ensured full system compatibility for seamless operations on both Standalone and icyte
+                                platforms.</li>
+                        </ul>
                     </div>
-                    <br><br>
-                    <div class="experience_project">
-                        <h3>MMFSL (Mahindra & Mahindra Financial Services Limited)</h3><h5>( October 2022 - December 2022 )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MMFSL is an innovative price prediction service, leveraging the power of Django Rest Framework. With a strong focus on the automotive industry, we have developed a state-of-the-art machine-learning model that revolutionizes the way car prices are forecasted. Our meticulously crafted model, backed by extensive data analysis, delivers accurate and reliable predictions, empowering both buyers and sellers in making informed decisions. By harnessing the capabilities of Django Rest Framework, MMFSL provides a seamless and user-friendly experience, enabling users to access our advanced price prediction service effortlessly. </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="company-info">
+                    <span class="company-name">Findability Sciences</span>
+                    <span class="tenure">Dec 2021 — April 2024</span>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <span class="role-label">Backend Developer & Prompt Engineer</span>
+                        <h3>SBIL Policy RAG AI</h3>
+                        <p class="project-desc">
+                            Architected a secure RAG system for **SBIL** to query sensitive policy data. Developed a
+                            backend that identifies schema complexity to generate precise Oracle SQL queries and natural
+                            language explanations while keeping client data localized in their secure environment.
+                        </p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">GPT-3.5 Turbo</span>
+                            <span class="tech-pill">Oracle DB</span>
+                            <span class="tech-pill">Prompt Engineering</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python Backend Developer</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, Django Rest Framework, oauth 2.0, MySQL</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Development of REST API, <br class="next-br"><span class="responsibility_list">Manage User login authentication, <br class="next-br"></span><span class="responsibility_list">Manage user operation data using MySQL Database, </span><br class="next-br">
-                                <span class="responsibility_list">Manage Python side Deployment on Server.</span></span></h4>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>Designed advanced prompt templates to translate natural language into accurate,
+                                multi-table Oracle SQL logic.</li>
+                            <li>Built a robust FastAPI communication layer between the client and the LLM server.</li>
+                            <li>Implemented server-side identification of tables and schemas to ensure flawless query
+                                generation.</li>
+                        </ul>
                     </div>
-                    <br><br>
-                    <div class="experience_project">
-                        <h3>Explored the Pinnacle of Efficiency and Innovation with FortressIQ and Clover POS Expertise</h3><h5>( September 2022 - October 2022 )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During this dedicated period of exploration, I delved into the intricacies of various technologies and tools. Notably, the FortressIQ tool captivated me with its advanced process intelligence and automation capabilities, empowering businesses to optimize their operations and streamline workflows. Additionally, I immersed myself in the world of Clover POS, a robust point-of-sale system renowned for its seamless transaction processing and efficient inventory management features. As part of my endeavors, I successfully created a unified database (UDB) specifically tailored for Clover POS data, providing businesses with a centralized repository to forecast sales and make data-driven decisions. Furthermore, I developed a specialized automation tool for gathering and analyzing weather data within the Clover POS environment, enabling businesses to incorporate weather forecasts into their sales projections.</p>
+                    <div class="project-card">
+                        <span class="role-label">Backend Developer & Prompt Engineer</span>
+                        <h3>NSEIT Stock Analytics RAG</h3>
+                        <p class="project-desc">
+                            Engineered a RAG-based analytics platform for **NSEIT** stock market data. The system
+                            interprets natural language questions to return structured data tables, technical
+                            explanations, and automated visual charts and graphs for market analysis.
+                        </p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">GPT-3.5 Turbo</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">Data Visualization</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Research and Development</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, FortressIQ, Cron Job</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Develop Report on Research, <br class="next-br"><span class="responsibility_list">Implement the Research Work.<br class="next-br"></span></span></h4>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>Developed a Prompt Engineering architecture to return structured data suitable for
+                                automated visual graph generation.</li>
+                            <li>Managed the extraction and migration of open-source stock data into an optimized MySQL
+                                environment.</li>
+                            <li>Integrated automated charting tools to provide visual responses alongside deep
+                                analytical text summaries.</li>
+                        </ul>
                     </div>
-                    <br><br><div class="experience_project">
-                        <h3>Explored Python Selenium and JMeter Automation.</h3><h5>( August 2022 - September 2022 )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this span of time, I have extensively explored Selenium with Python for JMeter automation and testing. This exploration has allowed me to gain valuable insights and expertise in creating efficient and reliable automation solutions. As an application developer, I have successfully developed and implemented a service that harnesses the power of Selenium and Python, enabling seamless automation and testing processes. This service empowers businesses to streamline their operations, enhance productivity, and ensure the delivery of high-quality software products. With my combined skills in automation and application development, I am dedicated to providing cutting-edge solutions that drive efficiency and excellence in the software development lifecycle.</p>
+                    <div class="project-card">
+                        <span class="role-label">AI Backend Engineer</span>
+                        <h3>Bahrain Government RAG POC</h3>
+                        <p class="project-desc">
+                            Developed a proof-of-concept RAG chatbot for the **Bahrain Government**. The bot provides
+                            step-by-step instructions for government schemes, passport applications, and licensing
+                            processes using vectorized web-scraped data.
+                        </p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Chroma DB</span>
+                            <span class="tech-pill">OpenAI Embeddings</span>
+                            <span class="tech-pill">Web Scraping</span>
+                            <span class="tech-pill">Python</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Research and Development</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, JMeter, Cron Job</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Develop Report on Research, <br class="next-br"><span class="responsibility_list">Implement the Research Work.<br class="next-br"></span></span></h4>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>Executed full-domain web scraping to build a comprehensive knowledge base of government
+                                procedures.</li>
+                            <li>Optimized retrieval accuracy by migrating the vector store from FAISS to Chroma DB for
+                                superior response quality.</li>
+                            <li>Utilized 'text-embedding-3-small' models to manage high-precision vector-to-text
+                                transformations.</li>
+                        </ul>
                     </div>
-                    <br><br><div class="experience_project">
-                        <h3>Research and Development on Celonis Tool for Process Excellence.</h3><h5>( July 2022 - August 2022 )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to my previous explorations, I also dedicated time to delve into the world of Celonis. As a leading process mining and analytics platform, Celonis provides valuable insights into the efficiency and effectiveness of business processes. Through my exploration of Celonis, I gained a deep understanding of its capabilities in uncovering bottlenecks, identifying process inefficiencies, and driving continuous improvement.</p>
+                    <div class="project-card">
+                        <span class="role-label">Python Backend Developer</span>
+                        <h3>Findability.EDA</h3>
+                        <p class="project-desc">Developed an automated EDA platform to visualize patterns, handle
+                            outliers, and generate summary statistics for ML workflows.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">FastAPI</span><span class="tech-pill">ActiveMQ</span><span
+                                class="tech-pill">MySQL</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Research and Development</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, Celonis tool</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Develop Report on Research, <br class="next-br"><span class="responsibility_list">Implement the Research Work.<br class="next-br"></span></span></h4>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>Developed REST APIs and managed server deployments.</li>
+                            <li>Handled user file systems and large-scale data operations.</li>
+                        </ul>
                     </div>
-                    <br><br><div class="experience_project">
-                        <h3>MFCW (Mahindra First Choice Wheels)</h3><h5>( April 2022 - July 2022 )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MFCW (Machine Learning Car Price Forecasting) is an innovative price prediction service developed using the Flask Framework. With a strong focus on the automotive industry, we have developed a cutting-edge machine-learning model specifically designed for car price prediction. In addition to the core prediction functionality, we have incorporated a convenient bulk request mode. This mode allows users to submit multiple price prediction requests in the form of CSV files, where our system efficiently predicts the prices and populates the corresponding CSV files with the results. This streamlined process enables users to obtain comprehensive price forecasts for a large number of cars in a time-saving manner.</p>
+
+                    <div class="project-card">
+                        <span class="role-label">Python Backend Developer</span>
+                        <h3>MMFSL Prediction</h3>
+                        <p class="project-desc">Engineered a car price forecasting engine for Mahindra Finance using
+                            Django and Machine Learning.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Django REST</span><span class="tech-pill">OAuth 2.0</span><span
+                                class="tech-pill">ML</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python Backend Developer Intern</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, Flask, MySQL</span></h4>
-                        </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Development of REST API for bulk requests, <br class="next-br"><span class="responsibility_list">Manage user operation data using MySQL Database. </span></span></h4>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>Implemented secure OAuth 2.0 login authentication.</li>
+                            <li>Managed complex automotive datasets in MySQL.</li>
+                        </ul>
                     </div>
-                    <br><br><div class="experience_project">
-                        <h3>NMIMS</h3><h5>( December 2021 - April 2022 )</h5> <br>
-                        <div class="experience_project_content_heading">
-                            <h4>Project Description : </h4>
-                            <p class="experience_project_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NMIMS (Next-Generation Image Matching Service) is an advanced photo matching service that facilitates accurate comparison between two images, providing a matching percentage. The primary objective of this service is to verify the identity of individuals by matching their ID proof with their current photo. Moreover, NMIMS offers the flexibility for users to input various file formats, including images, PDFs, DOCX, and even ZIP files containing multiple files. Leveraging the power of AWS services, specifically tailored for photo matching, NMIMS ensures robust and reliable results.</p>
+
+                    <div class="project-card">
+                        <span class="role-label">R&D Engineer</span>
+                        <h3>Automation & POS UDB</h3>
+                        <p class="project-desc">Developed a Unified Database for Clover POS and automated weather data
+                            extraction for sales forecasting.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">FortressIQ</span><span class="tech-pill">Python</span><span
+                                class="tech-pill">Cron Jobs</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Role : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python Backend Developer Intern</span></h4>
+                        <ul class="bullet-list">
+                            <li>Optimized workflows using process intelligence.</li>
+                            <li>Created predictive sales tools based on external factors.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="role-label">R&D Engineer</span>
+                        <h3>Performance & Automation</h3>
+                        <p class="project-desc">Conducted deep research into Selenium-JMeter integration and Celonis
+                            process mining for operational excellence.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Selenium</span><span class="tech-pill">JMeter</span><span
+                                class="tech-pill">Celonis</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Technology and Tools : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;">Python, Flask, MySQL, AWS Service</span></h4>
+                        <ul class="bullet-list">
+                            <li>Automated high-load testing scenarios.</li>
+                            <li>Identified business process bottlenecks using mining tools.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="role-label">Backend Intern</span>
+                        <h3>MFCW Bulk Forecaster</h3>
+                        <p class="project-desc">A Flask-based service for bulk car price predictions allowing users to
+                            process thousands of entries via CSV.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Flask</span><span class="tech-pill">CSV Processing</span><span
+                                class="tech-pill">MySQL</span>
                         </div>
-                        <div class="experience_project_content_heading">
-                            <h4>Responsibility : &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"> Development of REST API, <br class="next-br"><span class="responsibility_list">Manage User Files, <br class="next-br"></span><span class="responsibility_list">Manage user operation data using MySQL Database. </span></span></h4>
+                        <ul class="bullet-list">
+                            <li>Architected bulk request mode for high-volume predictions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="role-label">Backend Intern</span>
+                        <h3>NMIMS Image Matcher</h3>
+                        <p class="project-desc">A sophisticated photo-matching service used for identity verification
+                            against official ID documents.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">AWS Rekognition</span><span class="tech-pill">Python</span><span
+                                class="tech-pill">Flask</span>
                         </div>
+                        <ul class="bullet-list">
+                            <li>Integrated AWS services for facial comparison.</li>
+                            <li>Supported multi-format file uploads (PDF, ZIP, DOCX).</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- projects section start -->
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="serv-content">
                 <div class="card" onclick="doccard()">
                     <div class="box">
-                        <img src="images/DocCard.png" alt="">
-                        <div class="text">DocCard</div>
-                        <p>The DocCard is the concept which simply means “Document Card”. 
-                            The DocCard is similar to credit or debit card and which can share documents 
-                            wirelessly or by just tapping the card. The documents in the card will be store 
-                            in the sequence manner and for security purpose of those documents we will 
-                            use encryption methods.<br><br></p>
+                        <img src="images/DocCard.png" alt="DocCard">
                     </div>
+                    <div class="text">DocCard</div>
+                    <p>A "Document Card" concept utilizing wireless sharing and encryption to securely store and
+                        transfer documents with a simple tap.</p>
                 </div>
+
                 <div class="card" onclick="smsser()">
                     <div class="box">
-                        <img src="images/sms'ser.svg" alt="">
-                        <div class="text">Auto SMS'ser APP</div>
-                        <p>Auto SMS'ser is the automatic SMS sender android application which is useful at the time of
-                            developing the software as well as testing the software. This application works on the
-                            internet and it is a good replacement of the SMS paid services.<br><br><br><br><br></p>
+                        <img src="images/sms'ser.svg" alt="Auto SMS'ser">
                     </div>
+                    <div class="text">Auto SMS'ser APP</div>
+                    <p>An automated Android application designed for developers to streamline software testing by
+                        replacing paid SMS services.</p>
                 </div>
+
                 <div class="card" onclick="keduapp()">
                     <div class="box">
-                        <img src="images/kedu.svg" alt="">
-                        <div class="text">KEdu APP</div>
-                        <p>KEdu means Kid's Education APP, in which the basic study material are avalable in the form of
-                            Image and Audio. the moto of developing these app is "Education For All"
-                            <br><br><br><br><br><br>
-                        </p>
+                        <img src="images/kedu.svg" alt="KEdu APP">
                     </div>
+                    <div class="text">KEdu APP</div>
+                    <p>An educational platform for children providing study materials through immersive audio and
+                        visual content.</p>
                 </div>
+
                 <div class="card" onclick="mlheartdisease()">
                     <div class="box">
-                        <img src="images/perdiction.svg" alt="">
-                        <div class="text">Prediction of Heart Disease in Healthcare System</div>
-                        <p>This project is the Machine Learning application in which the complete ML lifecycle is used.
-                            In this project the task of the Machine Learning Model is to predict whether the person is
-                            suffering from Heart Disease or not by providing some medical-lab information.</p>
+                        <img src="images/perdiction.svg" alt="Heart Disease Prediction">
                     </div>
+                    <div class="text">Heart Prediction</div>
+                    <p>A full-lifecycle Machine Learning application that analyzes medical-lab data to predict heart
+                        disease risk factors.</p>
                 </div>
+
                 <div class="card" onclick="doctorsoftware()">
                     <div class="box">
-                        <img src="images/Doctor Software.svg" alt="">
-                        <div class="text">Doctor Software</div>
-                        <p>Doctor Software is the javafx project, which gives the information about the disease.
-                            Information contains the description of the disease, symptoms of the disease and a map view
-                            of the nearby hospitals. In this porject also contain the contact to doctor tab in it, the
-                            contact numbers of doctor for relevant is shown. The Moto of these type of project is to
-                            make awareness about diseases</p>
+                        <img src="images/Doctor Software.svg" alt="Doctor Software">
                     </div>
+                    <div class="text">Doctor Software</div>
+                    <p>A JavaFX diagnostic tool providing disease descriptions, symptoms, and mapping to nearby
+                        medical facilities.</p>
                 </div>
+
                 <div class="card" onclick="timealert()">
                     <div class="box">
-                        <img src="images/Alert.svg" alt="">
-                        <div class="text">Time Alert Application</div>
-                        <p>Time Alert Application (TAA) is the javafx project, which help to set reminder of perticular
-                            event. User can do time related operation such as Stopwatch, Timer, setting Alarm, deleting
-                            Alarm and updating Alarm. The Moto of this project is to make a application which can Alert
-                            to the user about there tasks. <br><br><br></p>
+                        <img src="images/Alert.svg" alt="Time Alert">
                     </div>
+                    <div class="text">Time Alert Application</div>
+                    <p>Comprehensive productivity tool featuring a stopwatch, timer, and intelligent alarm
+                        management system.</p>
                 </div>
+
                 <div class="card" onclick="multiconverter()">
                     <div class="box">
-                        <img src="images/convertor.svg" alt="">
-                        <div class="text">Multi Converter </div>
-                        <p>Multi Converter is the python GUI project, which helps to convert currency, distance, time
-                            and temperature. <br><br><br></p>
+                        <img src="images/convertor.svg" alt="Multi Converter">
                     </div>
+                    <div class="text">Multi Converter</div>
+                    <p>A Python-based GUI utility for high-precision conversion of currency, distance, time, and
+                        temperature units.</p>
                 </div>
+
                 <div class="card" onclick="poster()">
                     <div class="box">
-                        <img src="images/poster.svg" alt="">
-                        <div class="text">Poster on Searching the Optimal Bus Route</div>
-                        <p>In this poster the optimal bus route is find by using Artificial Intelligence Searching
-                            Method. The "A star" (A*) algorithm of AI is used to find the optimal route.</p>
+                        <img src="images/poster.svg" alt="A* Algorithm">
                     </div>
+                    <div class="text">Optimal Route Finder</div>
+                    <p>Research project utilizing the A* algorithm to determine the most efficient bus routes in
+                        urban environments.</p>
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-    <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 class="title">My Skills</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>
+                    <div class="text">Creative Skills & Professional Mindset</div>
                     <ul>
-                        <li><b>Learning from Mistakes :</b>&nbsp;&nbsp; Through the valuable lessons gained from my mistakes, 
-                            I have honed the ability to overcome obstacles and emerge stronger, fueling continuous personal and professional growth.
+                        <li>
+                            <b>Learning from Mistakes</b>
+                            I use setbacks as opportunities to refine my problem-solving skills, fueling continuous
+                            personal and professional growth.
                         </li>
-                        <li><b>Always have a backup plan :</b>&nbsp;&nbsp; My professional experience has taught me 
-                            the importance of always having a backup plan in product development for organizations.
+                        <li>
+                            <b>Strategic Backup Planning</b>
+                            My experience has taught me the necessity of contingency planning in robust product
+                            development.
                         </li>
-                        <li><b>Unleashing the Power of Technological Growth :</b>&nbsp;&nbsp;I am always ready and eager to learn new things, 
-                            continuously expanding my knowledge and capabilities to embrace growth and adapt to new opportunities.</li>
+                        <li>
+                            <b>Technological Adaptability</b>
+                            I am constantly expanding my capabilities to embrace new AI and database technologies.
+                        </li>
                     </ul>
-                    </p>
                 </div>
+
                 <div class="column right">
                     <div class="bars">
-                        <div class="info">
-                            <span>PYTHON</span>
-                            <span>80%</span>
-                        </div>
+                        <div class="info"><span>Python</span><span>80%</span></div>
                         <div class="line python"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>FAST API</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line fast_api"></div>
+                        <div class="info"><span>Backend Development (FastAPI and Flask)</span><span>70%</span></div>
+                        <div class="line backend_development"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>FLASK</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line flask"></div>
+                        <div class="info"><span>Snowflake</span><span>70%</span></div>
+                        <div class="line Snowflake"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>JAVA</span>
-                            <span>70%</span>
+                        <div class="info"><span>Frontend Development (Angular & TypeScript)</span><span>50%</span>
                         </div>
-                        <div class="line java"></div>
+                        <div class="line frontend_development"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>DJANGO</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line django"></div>
+                        <div class="info"><span>AWS Compute, Storage and Monitoring Services (EC2, Lambda, Batch, S3,
+                                Cloud Watch)</span><span>60%</span></div>
+                        <div class="line aws_tools"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line mysql"></div>
+                        <div class="info"><span>Generative AI & LLMs: Generative AI, Large Language Models (LLMs),
+                                Transformers, Prompt Engineering</span><span>55%</span></div>
+                        <div class="line gen_ai"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>JAVASCRIPT</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line javascript"></div>
+                        <div class="info"><span>RAG & Vector Search: Retrieval-Augmented Generation (RAG), Vector
+                                Databases (FAISS, Chroma DB)</span><span>40%</span></div>
+                        <div class="line ai_db"></div>
                     </div>
                     <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="line html"></div>
+                        <div class="info"><span>GenAI Frameworks: LangChain, Hugging Face</span><span>40%</span></div>
+                        <div class="line gen_ai_frameworks"></div>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>                   
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- teams section start -->
     <section class="achievements" id="achievements">
         <div class="max-width">
             <h2 class="title">My Achievements</h2>
-            <!-- <div class="serv-content"> -->
-            <div class="carousel">
-                <div class="card">
+            <div class="achievement-grid">
+
+                <div class="card"
+                    onclick="window.open('https://www.coursera.org/account/accomplishments/verify/MXR26QS3IYYI', '_blank')">
                     <div class="box">
-                        <img src="images/HCIA.jpg" alt="">
-                        <div class="text">Huawei Certified Artificial Intelligence<br>(HCAI)</div>
-                        <p>Artificial Intelligence Certification <br><br></p>
+                        <img src="images/Coursera.png" alt="DeepLearning.AI">
                     </div>
+                    <div class="text">Neural Networks and Deep Learning</div>
+                    <p>DeepLearning.AI Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/dell.jpg" alt="">
-                        <div class="text">Web Development Training Provided By<br> DELL</div>
-                        <p>Three Months Training in Web Development Domain</p>
-                    </div>
+                    <div class="box"><img src="images/HCIA.jpg" alt="Huawei AI"></div>
+                    <div class="text">Huawei Certified Artificial Intelligence (HCAI)</div>
+                    <p>Artificial Intelligence Professional Certification</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/hislopcollege.png" alt="">
-                        <div class="text">National Level Java Programming Quiz <br> </div>
-                        <p>Core Java Quiz competition organized by Department of Computer Science, Hislop College,
-                            Nagpur. <br> <br> </p>
-                    </div>
+                    <div class="box"><img src="images/dell.jpg" alt="DELL Training"></div>
+                    <div class="text">Web Development Training Provided By DELL</div>
+                    <p>Three Months Training in Web Development Domain</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/dypatil.jpeg" alt="">
-                        <div class="text">&nbsp; &nbsp; Teco Booster Gold &nbsp; &nbsp; Level</div>
-                        <p>Gold Level Certificate of programing competition in "C Programming" </p>
-                    </div>
+                    <div class="box"><img src="images/hislopcollege.png" alt="Nagpur Java Quiz"></div>
+                    <div class="text">National Level Java Programming Quiz</div>
+                    <p>Organized by Department of Computer Science, Hislop College, Nagpur</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/dypatil.jpeg" alt="">
-                        <div class="text">Bytecode Pundits Silver Level</div>
-                        <p>Silver Level Certificate of programing competition in "Java Programming" </p>
-                    </div>
+                    <div class="box"><img src="images/dypatil.jpeg" alt="Gold Medal"></div>
+                    <div class="text">Teco Booster Gold Level</div>
+                    <p>Gold Level Certificate of programming competition in "C Programming"</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/dypatil.jpeg" alt="">
-                        <div class="text">Pythogorean Inertia Bronze Level </div>
-                        <p>Bronze Level Certificate of programing competition in "Python Programming" </p>
-                    </div>
+                    <div class="box"><img src="images/dypatil.jpeg" alt="Silver Medal"></div>
+                    <div class="text">Bytecode Pundits Silver Level</div>
+                    <p>Silver Level Certificate of programming competition in "Java Programming"</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Become a Software Developer</div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/dypatil.jpeg" alt="Bronze Medal"></div>
+                    <div class="text">Pythogorean Inertia Bronze Level</div>
+                    <p>Bronze Level Certificate of programming competition in "Python Programming"</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">CSS Essential Training <br> <br></div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Become a Software Developer</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">HTML Essential Training <br> <br></div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">CSS Essential Training</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">JavaScript Essential Training</div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">HTML Essential Training</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Learning C# <br> <br></div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">JavaScript Essential Training</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Learning Java <br> <br></div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Learning C#</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Learning Python <br> <br></div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Learning Java</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Learning SQL Programming</div>
-                        <p>Linked In Learing Program Certificate></p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Learning Python</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Programming Foundations: Databases</div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Learning SQL Programming</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Programming Foundations: Fundamentals</div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Programming Foundations: Databases</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Programming Foundations: Web Security <br> <br></div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Programming Foundations: Fundamentals</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/linkedinlearing.png" alt="">
-                        <div class="text">Succeeding in Web Development: Full Stack and Front End</div>
-                        <p>Linked In Learing Program Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Programming Foundations: Web Security</div>
+                    <p>LinkedIn Learning Program Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Multiple Linear Regression with scikit-learn <br> <br></div>
-                        <p> Coursera Project Network Certificate.</p>
-                    </div>
+                    <div class="box"><img src="images/linkedinlearing.png" alt="LinkedIn"></div>
+                    <div class="text">Succeeding in Web Development</div>
+                    <p>Full Stack and Front End Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Predicting House Prices with Regression using TensorFlow</div>
-                        <p> Coursera Project Network Certificate.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Coursera"></div>
+                    <div class="text">Multiple Linear Regression</div>
+                    <p>Scikit-learn Project Network Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Create Your First Chatbot with Rasa and Python <br> <br></div>
-                        <p> Coursera Project Network Certificate.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Coursera"></div>
+                    <div class="text">Predicting House Prices</div>
+                    <p>Regression using TensorFlow Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Java Programming: Solving Problems with Software</div>
-                        <p>Duke University Certificate Offered Through Coursera.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Coursera"></div>
+                    <div class="text">Create Your First Chatbot</div>
+                    <p>Rasa and Python Project Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">How Google does Machine Learning <br> <br></div>
-                        <p>Google Cloud Certificate Offered Through Coursera.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Duke University"></div>
+                    <div class="text">Java Programming</div>
+                    <p>Solving Problems with Software (Duke University)</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">R Programming <br> <br> <br></div>
-                        <p>Johns Hopkins University Certificate Offered Through Coursera.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Google"></div>
+                    <div class="text">How Google does Machine Learning</div>
+                    <p>Google Cloud Certificate Offered via Coursera</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Using Python to Access Web Data <br><br></div>
-                        <p>University of Michigan Certificate Offered Through Coursera.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="JHU"></div>
+                    <div class="text">R Programming</div>
+                    <p>Johns Hopkins University Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Python Data Structures <br> <br> <br></div>
-                        <p>University of Michigan Certificate Offered Through Coursera.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Michigan"></div>
+                    <div class="text">Using Python to Access Web Data</div>
+                    <p>University of Michigan Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Coursera.png" alt="">
-                        <div class="text">Programming for Everybody (Getting Started with Python)</div>
-                        <p>University of Michigan Certificate Offered Through Coursera.</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Michigan"></div>
+                    <div class="text">Python Data Structures</div>
+                    <p>University of Michigan Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Digital-Skills-Badge.png" alt="">
-                        <div class="text">Working in a Digital World: Professional Skills</div>
-                        <p>IBM Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/Coursera.png" alt="Michigan"></div>
+                    <div class="text">Programming for Everybody</div>
+                    <p>Getting Started with Python (University of Michigan)</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Blockchain Essentials.png" alt="">
-                        <div class="text">IBM Blockchain Essentials V2</div>
-                        <p>IBM Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/Digital-Skills-Badge.png" alt="IBM"></div>
+                    <div class="text">Working in a Digital World</div>
+                    <p>IBM Professional Skills Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/BadgesPractitioner.png" alt="">
-                        <div class="text">Enterprise Design Thinking Practitioner</div>
-                        <p>IBM Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/Blockchain Essentials.png" alt="IBM"></div>
+                    <div class="text">IBM Blockchain Essentials V2</div>
+                    <p>IBM Technical Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Data_Sci_Found_Level_1.png" alt="">
-                        <div class="text">Data Science Foundations - Level 1</div>
-                        <p>IBM Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/BadgesPractitioner.png" alt="IBM"></div>
+                    <div class="text">Enterprise Design Thinking</div>
+                    <p>IBM Practitioner Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Cybersecurity-Fundementals.png" alt="">
-                        <div class="text">Cybersecurity Fundamentals</div>
-                        <p>IBM Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/Data_Sci_Found_Level_1.png" alt="IBM"></div>
+                    <div class="text">Data Science Foundations</div>
+                    <p>IBM Level 1 Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/badge-artificial-intelligence.png" alt="">
-                        <div class="text">AI Foundations <br><br></div>
-                        <p>IBM Certificate</p>
-                    </div>
+                    <div class="box"><img src="images/Cybersecurity-Fundementals.png" alt="IBM"></div>
+                    <div class="text">Cybersecurity Fundamentals</div>
+                    <p>IBM Professional Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Spoken Tutorial.png" alt="">
-                        <div class="text">Certificate for Completion of Java Training </div>
-                        <p>offered by the Spoken Tutorial Project, IIT Bombay</p>
-                    </div>
+                    <div class="box"><img src="images/badge-artificial-intelligence.png" alt="IBM"></div>
+                    <div class="text">AI Foundations</div>
+                    <p>IBM Artificial Intelligence Certificate</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Spoken Tutorial.png" alt="">
-                        <div class="text">Certificate for Completion of Python 3.4.3 Training </div>
-                        <p>offered by the Spoken Tutorial Project, IIT Bombay</p>
-                    </div>
+                    <div class="box"><img src="images/Spoken Tutorial.png" alt="IIT Bombay"></div>
+                    <div class="text">Java Training Completion</div>
+                    <p>Spoken Tutorial Project, IIT Bombay</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Spoken Tutorial.png" alt="">
-                        <div class="text">Certificate of Participation in Linux Training </div>
-                        <p>offered by the Spoken Tutorial Project, IIT Bombay</p>
-                    </div>
+                    <div class="box"><img src="images/Spoken Tutorial.png" alt="IIT Bombay"></div>
+                    <div class="text">Python 3.4.3 Training</div>
+                    <p>Spoken Tutorial Project, IIT Bombay</p>
                 </div>
+
                 <div class="card">
-                    <div class="box">
-                        <img src="images/Guinness_World_Records_logo.png" alt="">
-                        <div class="text">Certificate of Participation in Python Basic Programming Event </div>
-                        <p>Conduct by Guvi Geek Network Private Limited and AICTE</p>
-                    </div>
+                    <div class="box"><img src="images/Spoken Tutorial.png" alt="IIT Bombay"></div>
+                    <div class="text">Linux Training Participation</div>
+                    <p>Spoken Tutorial Project, IIT Bombay</p>
                 </div>
+
+                <div class="card">
+                    <div class="box"><img src="images/Guinness_World_Records_logo.png" alt="World Record"></div>
+                    <div class="text">Python Programming Event</div>
+                    <p>Participation conducted by Guvi Geek Network & AICTE</p>
+                </div>
+
             </div>
-            <!-- </div> -->
         </div>
     </section>
-
-    <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user-tie" style="color:#696969;"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Ravi Mendhe</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope" style="color:#FF4500;"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">ravi.pmendhe@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fab fa-linkedin" style="color:blue;"></i>
-                            <div class="info">
-                                <div class="head">Linked in</div>
-                                <div class="sub-title"><a href="https://www.linkedin.com/in/ravi-mendhe-a9a34419b"
-                                        target="_blank">Ravi Mendhe</a></div>
-                            </div>
-                        </div>
+            <h2 class="title">Get In Touch</h2>
 
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fab fa-skype" style="color:#306EFF;"></i>
-                            <div class="info">
-                                <div class="head">Skype</div>
-                                <div class="sub-title"> ravi.pmendhe</a></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-phone-alt" style="color:#4169E1;"></i>
-                            <div class="info">
-                                <div class="head">Phone Number</div>
-                                <div class="sub-title">9404877317</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt" style="color:#C71585;"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Aurangabad ,Maharashtra, India</div>
-                            </div>
-                        </div>
+            <div class="contact-flip-container">
+                <div class="flip-card">
+
+                    <div class="card-front">
+                        <div class="logo-area">Ravi Mendhe<span>.</span></div>
+                        <div class="designation">Software Engineer</div>
+                        <div style="color: #3b82f6; margin-top: 15px; font-weight: 600;">@ Integrichain</div>
+                        <div class="hint">Hover to Flip <i class="fas fa-sync"></i></div>
                     </div>
 
-                </div>
+                    <div class="card-back">
+                        <div class="contact-content">
+                            <div class="row">
+                                <i class="fas fa-user-tie" style="color: #64748b;"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Ravi Mendhe</div>
+                                </div>
+                            </div>
 
-                <a class="resume"
-                    href="https://drive.google.com/file/d/1XsbC-nNz4m0-DFpE4KIXbvuuikJSEEzy/view?usp=sharing"
-                    target="_blank">Download Resume</a>
+                            <div class="row">
+                                <i class="fab fa-skype" style="color: #00aff0;"></i>
+                                <div class="info">
+                                    <div class="head">Skype</div>
+                                    <div class="sub-title">ravi.pmendhe</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-envelope" style="color: #ef4444;"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">ravimendheofficial@gmail.com</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-phone-alt" style="color: #22c55e;"></i>
+                                <div class="info">
+                                    <div class="head">Phone</div>
+                                    <div class="sub-title">+919226712206</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fab fa-linkedin" style="color: #3b82f6;"></i>
+                                <div class="info">
+                                    <div class="head">LinkedIn</div>
+                                    <div class="sub-title">Ravi Mendhe</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt" style="color: #ec4899;"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">Pune, India</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 30px;">
+                            <a class="resume-btn"
+                                href="https://drive.google.com/file/d/1XsbC-nNz4m0-DFpE4KIXbvuuikJSEEzy/view">
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
     <!-- footer section start -->
     <footer>
-        <span>Created By Ravi Mendhe | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
-    </footer>
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/ravi-mendhe-a9a34419b" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ravimendherv" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:ravi.pmendhe@gmail.com" title="Email Me">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="skype:ravi.pmendhe?chat" title="Skype">
+                    <i class="fab fa-skype"></i>
+                </a>
+            </div>
 
+            <div class="footer-text">
+                <span>Created By <span class="name">Ravi Mendhe</span><span class="brand">.</span></span>
+                <br>
+                <span style="font-size: 0.85rem; margin-top: 10px; display: block;">
+                    <i class="far fa-copyright"></i> 2026 All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
