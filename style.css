@@ -549,6 +549,41 @@ section .title::after {
   width: 40%;
 }
 
+@media (max-width: 991px) {
+    .skills-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .skills-content .left, 
+    .skills-content .right {
+        width: 100%;
+    }
+}
+
+/* Fix for long text labels on mobile */
+@media (max-width: 600px) {
+    .skills .title {
+        font-size: 2.5rem; /* Smaller title for mobile */
+    }
+
+    .skills-content .right .info {
+        flex-direction: column; /* Stack name and % on very small screens */
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .skills-content .right .info span:last-child {
+        align-self: flex-end; /* Keep percentage on the right if possible */
+        font-size: 0.9rem;
+        color: #3b82f6;
+    }
+
+    .skills-content .right .line {
+        height: 10px; /* Slimmer bars for mobile */
+        margin-bottom: 20px;
+    }
+}
+
 /* achievements section styling */
 .achievements {
   height: 965px;
