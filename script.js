@@ -36,7 +36,8 @@ $(document).ready(function () {
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: [
-      "Python Developer",
+      "AI-augmented Engineer",
+      "Data Engineer",
       "SQL Expert",
       "Snowflake Practitioner",
       "AI Project Specialist",
